@@ -20,12 +20,12 @@ export const tweetsData = [
         replies: [
                   {
                 handle: `@TomCruise ✅`,
-                profilePic: `cruise.jpg`,
+                profilePic: `cruise.png`,
                 tweetText: `Yes! Sign me up! 😎🛩`,
             },
                   {
                 handle: `@ChuckNorris ✅`,
-                profilePic: `norris.jpg`,
+                profilePic: `norris.jpeg`,
                 tweetText: `I went last year😴`,
             },
         ],
