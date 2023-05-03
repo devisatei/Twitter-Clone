@@ -62,7 +62,7 @@ function handleTweetBtnClick(){
     if(tweetInput.value){
         tweetsData.unshift({
             handle: `@Scrimba`,
-            profilePic: `code.jpg`,
+            profilePic: `images/code.jpg`,
             likes: 0,
             retweets: 0,
             tweetText: tweetInput.value,
@@ -106,7 +106,7 @@ function handleMyReplyClick(tweetId){
         targetTweetObj.replies.unshift(
             {
                 handle: "@Scrimba",
-                profilePic: "images/drazen.drinic.jpg",
+                profilePic: "images/code.jpg",
                 tweetText: replyInput.value,
             }
         )
@@ -162,7 +162,7 @@ function getFeedHtml(){
                     <div class="tweet-reply">
                         <div class="tweet-inner">
                             <i class="close-btn fa-solid fa-trash ${myReplyDeleteBtnClass}" data-myreplytweetid="${tweet.uuid}" data-myreplyid="${reply.uuid}"></i>
-                            <img src="${reply.profilePic}" class="profile-pic">
+                            <img src="images/${reply.profilePic}" class="profile-pic">
                                 <div>
                                     <p class="handle">${reply.handle}</p>
                                     <p class="tweet-text">${reply.tweetText}</p>
@@ -176,7 +176,7 @@ function getFeedHtml(){
         feedHtml += `
         <div class="tweet">
             <div class="tweet-inner">
-                <img src="${tweet.profilePic}" class="profile-pic">
+                <img src="images/${tweet.profilePic}" class="profile-pic">
                 <div>
                 <i class="close-btn fa-solid fa-trash ${myTweetDeleteBtnClass}" data-delete="${tweet.uuid}"></i>
 
